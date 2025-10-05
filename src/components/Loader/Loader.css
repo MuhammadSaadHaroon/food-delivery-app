@@ -1,0 +1,74 @@
+.loader-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  overflow: hidden;
+  background-color: black;
+}
+
+.ingredient {
+  position: absolute;
+  width: 150px;
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-80px);
+  animation: buildBurger 6s infinite ease-in-out;
+}
+
+@keyframes buildBurger {
+  0% {
+    transform: translateY(-550px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bun-top {
+  animation-delay: 4s;
+  top: 170px;
+  z-index: 6;
+}
+.lettuce {
+  animation-delay: 1s;
+  top: 220px;
+  z-index: 5;
+}
+.patty {
+  animation-delay: 2s;
+  top: 200px;
+  z-index: 5;
+}
+.cheese {
+  animation-delay: 3s;
+  top: 180px;
+  z-index: 5;
+}
+.bun-bottom {
+  animation-delay: 0s;
+  top: 250px;
+  z-index: 1;
+}
+
+.reset-burger {
+  animation: resetBurger 0.5s ease-out forwards;
+}
+
+@keyframes resetBurger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

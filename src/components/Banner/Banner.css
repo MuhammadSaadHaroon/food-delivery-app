@@ -1,0 +1,17 @@
+.banner {
+  height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  gap: 20px;
+}
+
+.banner-title {
+  font-weight: 700;
+}
