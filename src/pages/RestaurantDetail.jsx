@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
 import { Container, Typography, Grid, Card, CardContent, Button } from "@mui/material";
 
 const RestaurantDetail = () => {
@@ -15,6 +16,8 @@ const RestaurantDetail = () => {
   if (!restaurant) return <Typography>Loading...</Typography>;
 
   return (
+    <>
+    <Navbar />
     <Container sx={{ mt: 5 }} style={{width: "60%"}}>
       <Typography variant="h4" gutterBottom>
         🍴 {restaurant.name}
@@ -77,6 +80,7 @@ const RestaurantDetail = () => {
 <br />
 
     </Container>
+    </>
   );
 };
 

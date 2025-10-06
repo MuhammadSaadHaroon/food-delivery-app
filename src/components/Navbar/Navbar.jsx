@@ -12,8 +12,8 @@ const Navbar = () => {
         </Typography>
         <div className="nav-links">
           <Button color="inherit" component={Link} to="/">Home</Button>
-          <Button color="inherit" component={Link} to="">Restaurants</Button>
-          <Button color="inherit" component={Link} to="">Contact</Button>
+          <Button color="inherit" component={Link} to="/">Restaurants</Button>
+          <Button color="inherit" component={Link} to="/">Contact</Button>
         </div>
       </Toolbar>
     </AppBar>
