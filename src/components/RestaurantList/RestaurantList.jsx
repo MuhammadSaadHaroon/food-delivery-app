@@ -16,7 +16,7 @@ const RestaurantList = () => {
   return (
     <div className="restaurant-list">
       <Typography variant="h4" gutterBottom>
-        Popular Restaurants 🍽️
+        Popular Foods 🍽️
       </Typography>
       <br></br>
       <Grid container spacing={3} sx={{ width: "900px", margin: "0 auto" }}>
