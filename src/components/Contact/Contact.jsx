@@ -4,7 +4,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <Container className="contact-section" maxWidth="md">
+    <Container className="contact-section" maxWidth="sm">
       <Typography variant="h4" gutterBottom>
         Contact Us 📞
       </Typography>
