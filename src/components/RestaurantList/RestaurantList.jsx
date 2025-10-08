@@ -29,7 +29,7 @@ const RestaurantList = () => {
                 <Button
                   variant="outlined"
                   sx={{ mt: 1 }}
-                  onClick={() => navigate(`/restaurant/${item.id}`)} // ✅ navigate with id
+                  onClick={() => navigate(`/restaurant/${item.id}`)}
                 >
                   View Menu
                 </Button>

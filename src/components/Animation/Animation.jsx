@@ -49,7 +49,7 @@ const Animation = () => {
     })();
   }, []);
 
-  return null; // ye component visible nahi hoga, sirf animation run karega
+  return null;
 };
 
 export default Animation;
